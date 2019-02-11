@@ -23,7 +23,9 @@ function showLoading(...arg) {
 function hideLoading() {
   if (!isLoading) return;
   loading.hideLoading();
-}
+  isLoading = false;
+};
+
 const API = {
   showLoading,
   hideLoading
