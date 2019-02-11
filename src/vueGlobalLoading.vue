@@ -1,7 +1,7 @@
 <template>
   <div class="vue-global-loading" v-show="show">
     <div class="vue-global-loading-mask" :style="{'z-index': zIndex}" v-show="config.mask"></div>
-    <component :is="useComponent" :style="{'z-index': zIndex + 1}" :title="config.title"></component>
+    <component :is="useComponent" :style="{'z-index': zIndex + 1}" :showText="config.title"></component>
   </div>
 </template>
 
@@ -35,6 +35,7 @@ export default {
         throw 'config request object!'
       }
       this.config = {...this.config, ...config};
+      console.log(this.config);
       this.count++;
       this.show = true;
     },

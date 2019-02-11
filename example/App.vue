@@ -15,6 +15,11 @@ export default {
     showLoading() {
       this.$loading.showLoading();
       setTimeout(() => {
+        this.$loading.showLoading({
+          title: '第二次调用'
+        });
+      }, 1000);
+      setTimeout(() => {
         this.$loading.hideLoading();
       }, 20000);
     }
