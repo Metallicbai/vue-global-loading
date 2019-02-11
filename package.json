@@ -1,7 +1,6 @@
 {
   "name": "vue-global-loading",
   "version": "0.1.0",
-  "private": true,
   "main": "./src/main.js",
   "scripts": {
     "serve": "vue-cli-service serve --open ./example/main.js",
